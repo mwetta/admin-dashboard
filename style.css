@@ -5,6 +5,14 @@
 
 body {}
 
+
+h1 img {
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: -8px;
+}
+
 .wrapper {
     position: absolute;
     width: 100%;
@@ -15,7 +23,7 @@ body {}
 
 .container {
     display: grid;
-    grid-template: 1fr 5fr / 1fr 5fr;
+    grid-template: 1fr 5fr / minmax(300px, 1fr) 5fr;
     grid-template-areas:
         "sidebar header"
         "sidebar main"
@@ -26,9 +34,35 @@ body {}
     background-color: rgb(0, 153, 255);
     grid-area: sidebar;
     color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 
 .sidebar .nav {}
+
+.sidebar a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav ul,
+.admin-links ul {
+    list-style-type: none;
+}
+
+li {
+    display: block;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin: 20px;
+}
+
+li img {
+    vertical-align: middle;
+    margin-right: 20px;
+    margin-top: -10px;
+}
 
 .header {
     grid-area: header;
@@ -59,4 +93,12 @@ button,
 input {
     border-radius: 20px;
     padding: 10px;
+}
+
+.white {
+    filter: invert(100%) sepia(0%) saturate(7487%) hue-rotate(327deg) brightness(106%) contrast(101%);
+}
+
+.small {
+    height: 30px;
 }
