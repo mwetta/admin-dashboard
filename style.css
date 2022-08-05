@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+
+body {}
+
+.wrapper {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: antiquewhite;
+}
+
+.container {
+    display: grid;
+    grid-template: 1fr 5fr / 1fr 5fr;
+    grid-template-areas:
+        "sidebar header"
+        "sidebar main"
+    ;
+}
+
+.sidebar {
+    background-color: rgb(0, 153, 255);
+    grid-area: sidebar;
+    color: white;
+}
+
+.sidebar .nav {}
+
+.header {
+    grid-area: header;
+    background-color: white;
+    color: black;
+}
+
+.main {
+    grid-area: main;
+    background-color: hsl(225, 24%, 93%);
+}
+
+.projects {}
+
+.announcements {}
+
+.trending {}
+
+button {
+    background-color: rgb(0, 153, 255);
+    border: none;
+    width: 100px;
+    color: white;
+    font-weight: 500;
+}
+
+button,
+input {
+    border-radius: 20px;
+    padding: 10px;
+}
