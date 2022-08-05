@@ -73,6 +73,7 @@ h1 img {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 .nav ul {
@@ -129,6 +130,10 @@ li img {
     margin-right: 20px;
 }
 
+.spreads .card {
+    display: grid;
+}
+
 .yellow {
     border-left: 10px solid var(--arylide-yellow);
 }
@@ -158,6 +163,11 @@ li img {
     grid-area: announcements;
 }
 
+p,
+.title {
+    color: #8f8f8f;
+}
+
 .trending {
     grid-area: trending;
 }
@@ -183,6 +193,10 @@ li img {
 .actions {
     display: flex;
     align-items: center;
+}
+
+.account p {
+    color: black;
 }
 
 .login,
@@ -253,6 +267,10 @@ hr {
 .footer {
     grid-area: footer;
     padding: 5px;
-    align-self: center;
-    justify-self: center;
+    text-align: center;
+    color: white;
+    background-color: var(--persian-plum);
+    width: 100%;
+    box-shadow: 0px 0px 5px #989898;
+    z-index: 1;
 }
