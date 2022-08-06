@@ -22,8 +22,6 @@
     font-family: 'Raleway', sans-serif;
 }
 
-body {}
-
 h1,
 h2,
 h3 {
@@ -64,8 +62,6 @@ h1 img {
     grid-template-rows: 250px 1fr;
     z-index: 2;
 }
-
-.sidebar .nav {}
 
 .sidebar a {
     color: white;
