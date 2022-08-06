@@ -131,7 +131,9 @@ li img {
 }
 
 .spreads .card {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .yellow {
@@ -150,7 +152,7 @@ li img {
 .grid {
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
 }
 
 .card {
@@ -160,7 +162,8 @@ li img {
 }
 
 .buttons {
-    justify-self: end;
+    display: flex;
+    justify-content: end;
 }
 
 .buttons img {
