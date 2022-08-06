@@ -46,7 +46,7 @@ h1 img {
 .container {
     display: grid;
     grid-template-rows: minmax(1fr, 250px) 1fr 30px;
-    grid-template-columns: 320px 3fr;
+    grid-template-columns: 300px 3fr;
     grid-template-areas:
         "sidebar header"
         "sidebar main"
