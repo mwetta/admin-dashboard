@@ -159,6 +159,14 @@ li img {
     padding: 20px;
 }
 
+.buttons {
+    justify-self: end;
+}
+
+.buttons img {
+    margin: 5px;
+}
+
 .announcements {
     grid-area: announcements;
 }
@@ -240,7 +248,7 @@ input {
 }
 
 .small {
-    height: 30px;
+    height: 20px;
 }
 
 .medium {
